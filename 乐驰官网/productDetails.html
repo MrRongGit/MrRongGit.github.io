@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品详情</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部start -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- logo -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="images/logo.jpg" alt="">
+            </div>
+
+            <!-- nav -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right header-nav">
+                    <li><a href="index.html">乐驰首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="product.html">产品展示</a></li>
+                    <li><a href="news.html">新闻资讯</a></li>
+                    <li><a href="technology.html">技术支持</a></li>
+                    <li><a href="recruit.html">人才招聘</a></li>
+                    <li><a href="contact.html">联系方式</a></li>
+                </ul>
+            </div>
+            <!-- nav -->
+        </div>
+    </nav>
+    <!-- 头部end -->
+    <!-- 留言弹窗 start -->
+    <div class="FeedBack" id="FeedBack">
+        <div class="add-stay">
+            <div class="stay-close">
+                <button id="stayButtonClose" class="stayButtonClose">关闭</button>
+            </div>
+            <div class="stay-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>订购产品</td>
+                        </tr>
+                        <tr>
+                            <td>订购数量</td>
+                            <td><input name="ordercount" type="text" size="10" value="1"></td>
+                        </tr>
+                        <tr>
+                            <td>联系人</td>
+                            <td><input name="name" type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>联系方式</td>
+                            <td><input name="address" type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>联系电话</td>
+                            <td><input name="tel" type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>电子邮件</td>
+                            <td><input name="email" type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>QQ</td>
+                            <td><input name="qq" type="text" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td>备注</td>
+                            <td><textarea name="content" cols="60" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp</td>
+                            <td><input type="submit" value="立即订购"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 留言弹窗 end -->
+    <!-- product start -->
+    <div class="MainProduct">
+        <div class="container">
+            <div class="MainProduct-left col-lg-3 hidden-xs hidden-sm">
+                <ul>
+                    <li class="porductFirst">
+                        <h4>乐驰产品系列</h4>
+                    </li>
+                    <li><a href="#" class="productDefult">超低容量喷雾器</a></li>
+                    <li><a href="#">离心式消毒通道</a></li>
+                    <li><a href="#">超声波消毒通道</a></li>
+                    <li><a href="#">车辆消毒通道</a></li>
+                    <li><a href="#">超声波加湿器</a></li>
+                    <li><a href="#">离心式雾化器</a></li>
+                    <li><a href="#">机动超低容量</a></li>
+                    <li><a href="#">泡沫清洗机</a></li>
+                    <li><a href="#">高压喷雾</a></li>
+                    <li><a href="#">干雾加湿器</a></li>
+                </ul>
+                <ul>
+                    <li class="porductFirst">
+                        <h4>热门产品</h4>
+                    </li>
+                    <li><a href="#">框架式泡沫高压清洗一体机</a></li>
+                    <li><a href="#">离心式人员消毒通道（标准型）</a></li>
+                    <li><a href="#">车辆消毒通道（豪华型）</a></li>
+                    <li><a href="#">手推离心喷雾器</a></li>
+                    <li><a href="#">LOCE超声波加湿器</a></li>
+                    <li><a href="#">气雾免疫机</a></li>
+                    <li><a href="#">落地式离心喷雾器</a></li>
+                    <li><a href="#">内燃机驱动高压热水清洗机</a></li>
+                </ul>
+            </div>
+            <div class="MainProduct-right col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-1">
+                <div class="ww">
+                    <div class="MainProduct-right-xq col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                        <img src="./images/2018620145123.jpg" alt="">
+                    </div>
+                    <div class="MainProduct-right-ms col-lg-6 col-md-6 col-sm-6 col-xs-6 col-md-offset-1">
+                        <h4>电动超低容量喷雾器</h4>
+                        <p>【品牌】 乐驰 LOCE</p>
+                        <p>【型号】 LC-QR05B</p>
+                        <button type="button" class="btn btn-default" style="width:100px;" onclick="addStay()">在线订购</button>
+                        <button type="button" class="btn btn-default" style="width:100px;">收藏本产品</button>
+                    </div>
+                </div>
+                <div class="MainProduct-right-cpxq">
+                    <h4>【产品详情】</h4>
+                </div>
+                <div class="MainProduct-right-jc">
+                    <div class="black">
+                        <p>技术参数：</p>
+                    </div>
+                    <p>
+                        该产品是我公司采用荷兰先进技术在中国工厂生产的普及型气溶胶喷雾消毒器，广泛适用于卫生防疫、医院手术室、病房、门诊大厅、救护车、实验动物房、微生物实验室、生物制品车间、食品加工厂、动物检验检疫、屠宰场、养鸡场、养猪场、养牛场、制水厂等室外内空气消毒，亦可用于杀虫，气雾免疫，空气加湿，降尘除菌。是目前较为理想的喷雾消毒器械</p>
+                    <img src="./images/2018620145123.jpg" alt="">
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- product end -->
+    <!-- 尾部 start -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-left col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img src="./images/footer-left-tb.png" class="hidden-xs" alt="" style="float:left;">
+                    <div class="footer-top-left-l">
+                        <p>传真： +86 531 85760681</p>
+                        <p>电话：18678873781</p>
+                        <p>网址：www.jnloce.com</p>
+                    </div>
+
+                </div>
+                <div class="footer-top-right col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img src="./images/footer-right-tb.png" class="hidden-xs" alt="" style="float:left">
+                    <div class="footer-top-right-r">
+                        <p>山东乐驰环保科技有限公司 </p>
+                        <p>地址： 山东省济南市天桥区药山工业园</p>
+                        <p>邮箱： loce@jnloce.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>版权所有 © 2018 山东乐驰环保科技有限公司 网站建设技术支持：林晟信息科技</p>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 end -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var stayButtonClose = document.getElementById('stayButtonClose');
+        var FeedBack = document.getElementById('FeedBack');
+
+        function addStay() {
+            FeedBack.style.display = 'block';
+        }
+
+        stayButtonClose.onclick = function () {
+            FeedBack.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
