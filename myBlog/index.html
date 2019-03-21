@@ -1,1 +1,28 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>my-blog</title><link href=static/css/app.86b6461e.css rel=preload as=style><link href=static/js/app.f4646912.js rel=preload as=script><link href=static/js/chunk-vendors.117a3f06.js rel=preload as=script><link href=static/css/app.86b6461e.css rel=stylesheet></head><body><div id=app></div><script src=static/js/chunk-vendors.117a3f06.js></script><script src=static/js/app.f4646912.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>my-blog</title><link href=assets/css/app.eb68b71c.css rel=preload as=style><link href=assets/css/chunk-vendors.d67d25ff.css rel=preload as=style><link href=assets/js/app.c0b25fce.js rel=preload as=script><link href=assets/js/chunk-vendors.24bac9fc.js rel=preload as=script><link href=assets/css/chunk-vendors.d67d25ff.css rel=stylesheet><link href=assets/css/app.eb68b71c.css rel=stylesheet></head><body><div id=app></div><script src=assets/js/chunk-vendors.24bac9fc.js></script><script src=assets/js/app.c0b25fce.js></script></body><script src=https://code.jquery.com/jquery-3.3.1.js integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin=anonymous></script><script>$(document).click(function(e){    
+       var list = ['学而时习之', '不亦说乎', '有朋自远方来', '不亦乐乎', '人不知而不愠', '不亦君子乎', '三人行', '必有我师焉', '择其善者而从之', '其不善者而改之', '学而不思则罔', '思而不学则殆','坚者如磐石','虽岁月交替而不移','忍者如柔练','虽困苦艰辛而不摧','百折不回','持之以恒也','学而不厌','诲人不倦','我爱你','忧劳可以兴国','逸豫可以亡身','非学无以广才','非志无以成学','家贫志不移','贪读如饥渴'];
+       textUp( e, 2000, list, 200 )
+   })
+   function textUp( e, time, arr, heightUp ){
+       var lists = Math.floor(Math.random() * arr.length);
+       var colors = '#'+Math.floor(Math.random()*0xffffff).toString(16);
+       var $i = $('<span />').text( arr[lists] );
+       var xx = e.pageX || e.clientX + document.body.scroolLeft;
+       var yy = e.pageY || e.clientY + document.body.scrollTop;
+   
+       $('body').append($i);
+       $i.css({
+           top: yy,
+           left: xx,
+           color: colors,
+           transform: 'translate(-50%, -50%)',
+           display: 'block',
+           position: 'absolute',
+           zIndex: 999999999999
+       })  
+       $i.animate({
+           top: yy - ( heightUp ? heightUp : 200 ),
+           opacity: 0
+       }, time, function(){
+           $i.remove();
+       })            
+   }</script></html>
